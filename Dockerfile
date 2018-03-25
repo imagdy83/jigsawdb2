@@ -5,4 +5,5 @@ ENV PATH="/SETUP/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bi
 RUN echo "hyveP@ssw0rd" | passwd --stdin root && echo "0 jigsawdb2 0" > /home/db2inst1/sqllib/db2nodes.cfg && chmod +x entrypoint.sh
 ENTRYPOINT ["/bin/bash","./entrypoint.sh"]
 CMD ["start"]
+
 EXPOSE 50000
